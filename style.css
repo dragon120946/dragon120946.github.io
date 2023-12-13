@@ -77,8 +77,27 @@ h2{
 }
 
 @media screen and (max-width: 768px) {
+    h1{
+        line-height: 80px;
+        top: -10px;
+        left: 0px;
+    }
+    header{
+        height: 80px;
+    }
     header ul{
         display: none;
+    }
+    .img{
+        height: 70vh;
+        background-image: url(image/工作區域\ 1.png);
+    }
+    .about{
+        padding: 5vh;
+    }
+    .about p{
+        padding: 10vh 8vw;
+        font-size: 26px;
     }
     .menu{
         display: inline;
@@ -86,7 +105,7 @@ h2{
         color: white;
         font-size: 35px;
         border: none;
-        height: 15vh;
+        height: 10vh;
         width: 180vw;
     }
 }
