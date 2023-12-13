@@ -1,0 +1,92 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(93, 130, 43);
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+h1{
+    position: absolute;
+    background-image: url(image/LOGO.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+    left: 30px;
+    line-height: 100px;
+    text-indent: -999px;
+}
+
+header ul{
+    position: absolute;
+    right: 3vw;
+    top: 0.5vw;
+    line-height: 100px;
+}
+
+header li{
+    display: inline;
+    margin: 2vw;
+    font-size: 24px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    
+    height: 163.5vh;
+    background-image: url(image/網頁橫版.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(25, 41, 20);
+}
+
+.about{
+    padding: 10vh;
+    background-color: rgb(25, 41, 20);
+}
+
+.about p{
+    color: white;
+    padding: 15vh 15vw;
+    font-size: 30px;
+}
+
+.gallery{
+    padding: 10vh;
+    background-color: rgb(25, 41, 20);
+}
+.menu{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    header ul{
+        display: none;
+    }
+    .menu{
+        display: inline;
+        background-color: transparent;
+        color: white;
+        font-size: 35px;
+        border: none;
+        height: 15vh;
+        width: 180vw;
+    }
+}
