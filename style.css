@@ -2,6 +2,50 @@
     padding: 0;
     margin: 0;
 }
+main{
+    background-color: rgb(25, 41, 20);
+}
+
+h1, h2, h3, h4, p , a{
+    color: white;
+}
+
+h2, h3{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin: 10vh;
+}
+
+.gallery p, .game p, .animation p, .movie p{
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.game, .animation, .movie{
+    padding: 100px;
+}
+
+.game div, .animation div, .movie div{
+    padding: 100px;
+} 
+
+.game p, .animation p, .movie p{
+    color: black;
+}
+
+.game section, .animation section, .movie section, .gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game section, .animation section, .movie section{
+    background-color: rgb(189, 189, 189);
+    border-radius: 30px;
+    padding: 100px;
+    margin: 100px;
+}
 
 header{
     background-color: rgb(93, 130, 43);
@@ -36,15 +80,7 @@ header li{
 }
 
 header a{
-    color: white;
     text-decoration: none;
-}
-
-h2{
-    color: white;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
 }
 
 .img{
@@ -54,24 +90,22 @@ h2{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgb(25, 41, 20);
-}
-
-.about{
-    padding: 10vh;
-    background-color: rgb(25, 41, 20);
 }
 
 .about p{
-    color: white;
     padding: 15vh 15vw;
     font-size: 30px;
 }
 
 .gallery{
     padding: 10vh;
-    background-color: rgb(25, 41, 20);
 }
+
+.gallery p{
+    display: flex;
+    justify-content: center;
+}
+
 .menu{
     display: none;
 }
