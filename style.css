@@ -2,50 +2,6 @@
     padding: 0;
     margin: 0;
 }
-main{
-    background-color: rgb(25, 41, 20);
-}
-
-h1, h2, h3, h4, p , a{
-    color: white;
-}
-
-h2, h3{
-    display: flex;
-    justify-content: center;
-    font-size: 40px;
-    margin: 10vh;
-}
-
-.gallery p, .game p, .animation p, .movie p{
-    font-size: 24px;
-    line-height: 50px;
-}
-
-.game, .animation, .movie{
-    padding: 100px;
-}
-
-.game div, .animation div, .movie div{
-    padding: 100px;
-} 
-
-.game p, .animation p, .movie p{
-    color: black;
-}
-
-.game section, .animation section, .movie section, .gallery{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.game section, .animation section, .movie section{
-    background-color: rgb(189, 189, 189);
-    border-radius: 30px;
-    padding: 100px;
-    margin: 100px;
-}
 
 header{
     background-color: rgb(93, 130, 43);
@@ -53,7 +9,9 @@ header{
     width: 100%;
     position: fixed;
 }
-
+.menu{
+    display: none;
+}
 h1{
     position: absolute;
     background-image: url(image/LOGO.png);
@@ -65,49 +23,81 @@ h1{
     line-height: 100px;
     text-indent: -999px;
 }
-
 header ul{
     position: absolute;
     right: 3vw;
     top: 0.5vw;
     line-height: 100px;
 }
-
 header li{
     display: inline;
     margin: 2vw;
     font-size: 24px;
 }
-
 header a{
     text-decoration: none;
 }
 
+h1, h2, h3, h4, p , a{
+    color: white;
+}
+h2, h3{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+h2{
+    font-size: 60px;
+}
+h3{
+    font-size: 50px;
+    padding: 100px;
+}
+
+main{
+    background-color: rgb(25, 41, 20);
+}
 .img{
-    
-    height: 163.5vh;
     background-image: url(image/網頁橫版.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    height: 1550px;
 }
-
 .about p{
-    padding: 15vh 15vw;
+    margin: 200px 300px 200px;
     font-size: 30px;
-}
-
-.gallery{
-    padding: 10vh;
-}
-
-.gallery p{
     display: flex;
     justify-content: center;
 }
 
-.menu{
-    display: none;
+.portfolio p{
+    padding: 100px;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+}
+.game, .animation, .movie{
+    padding: 0px 150px;
+}
+.game section, .animation section, .movie section, .portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game section, .animation section, .movie section{
+    background-color: rgb(189, 189, 189);
+    border-radius: 30px;
+    padding: 100px;
+    margin: 100px;
+}
+.game div, .animation div, .movie div{
+    padding: 100px;
+} 
+.game p, .animation p, .movie p{
+    color: black;
+    font-size: 24px;
+    line-height: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -122,24 +112,51 @@ header a{
     header ul{
         display: none;
     }
-    .img{
-        height: 70vh;
-        background-image: url(image/工作區域\ 1.png);
-    }
-    .about{
-        padding: 5vh;
-    }
-    .about p{
-        padding: 10vh 8vw;
-        font-size: 26px;
-    }
     .menu{
         display: inline;
         background-color: transparent;
         color: white;
         font-size: 35px;
         border: none;
-        height: 10vh;
+        height: 80px;
         width: 180vw;
+    }
+    .img{
+        height: 600px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    h3{
+        font-size: 40px;
+        padding: 20px 0px;
+    }
+    .about p{
+        margin: 100px;
+        font-size: 26px;
+    }
+    img{
+        width: 60vw;
+    }
+    .portfolio p{
+        height: 0px;
+    }
+    
+    .game, .animation, .movie{
+        padding: 0px;
+    }
+    
+    .game img, .animation img, .movie img{
+        border-radius: 30px;
+    }
+    .game section, .animation section, .movie section{
+        padding: 40px;
+        margin: 50px;
+    }
+    .game div, .animation div, .movie div{
+        padding: 50px 0px;
+    }
+    .game p, .animation p, .movie p{
+        font-size: 22px;
     }
 }
