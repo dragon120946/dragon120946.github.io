@@ -58,7 +58,7 @@ main{
     background-color: rgb(25, 41, 20);
 }
 .img{
-    background-image: url(image/網頁橫版.jpg);
+    background-image: url(image/工作區域\ 1.png);
     background-size: contain;
     background-repeat: no-repeat;
     height: 1550px;
@@ -88,14 +88,22 @@ main{
 .game section, .animation section, .movie section{
     background-color: rgb(189, 189, 189);
     border-radius: 30px;
-    padding: 100px;
-    margin: 100px;
+    padding: 30px;
+    margin: 30px;
 }
 .game div, .animation div, .movie div{
-    padding: 100px;
+    padding: 50px;
 } 
 .game p, .animation p, .movie p{
     color: black;
+    font-size: 24px;
+    line-height: 50px;
+}
+.info div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-size: 24px;
     line-height: 50px;
 }
@@ -150,13 +158,13 @@ main{
         border-radius: 30px;
     }
     .game section, .animation section, .movie section{
-        padding: 40px;
-        margin: 50px;
+        margin: 30px;
     }
     .game div, .animation div, .movie div{
         padding: 50px 0px;
     }
     .game p, .animation p, .movie p{
         font-size: 22px;
+        line-height: 30px;
     }
 }
