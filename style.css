@@ -136,14 +136,14 @@ main{
         padding: 80px 0px 0px 0px;
     }
     .title{
-        width: 100vw;
+        width: 200px;
         padding: 0px 0px;
     }
     .about p{
         padding: 0px 30px;
     }
     .portfolio img{
-        width: 80vw;
+        width: 200px;
         padding: 0px 10px;   
     }
     .game, .animation, .movie{
