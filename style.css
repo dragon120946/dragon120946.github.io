@@ -67,8 +67,11 @@ main{
 .about, .portfolio, .portfolio div, .game, .animation, .movie, .info{
     padding: 50px 0px;
 }
+.about p{
+    padding: 0px 300px;
+}
 .portfolio img{
-    padding: 0px 0px 50px 0px; 
+    padding: 0px 0px 30px 0px; 
 }
 .info div{
     display: flex;
@@ -96,17 +99,11 @@ main{
 }
 
 @media screen and (max-width: 768px) {
-    h1{
-        line-height: 80px;
-        top: -10px;
-        left: 0px;
-    }
+   
     header{
         height: 80px;
     }
-    header ul{
-        display: none;
-    }
+   
     .menu{
         display: inline;
         background-color: transparent;
@@ -116,45 +113,38 @@ main{
         height: 80px;
         width: 180vw;
     }
-    .img{
-        height: 600px;
+    h1{
+        height: 80px;
+        width: 80px;
+        top: -5px;
     }
-    /*
+    header ul{
+        display: none;
+    }
+    
     h2{
-        font-size: 40px;
-        padding: 0px 20px;
+        font-size: 32px;
     }
     h3{
-        font-size: 32px;
-        padding: 0px 20px;
-    }
-    .about p{
-        margin: 0px 30px 100px;
         font-size: 26px;
     }
-    img{
-        width: 60vw;
-    }
-    .portfolio p{
-        height: 0px;
-    }
-    
-    .game, .animation, .movie{
-        padding: 0px;
-    }
-    
-    .game img, .animation img, .movie img{
-        border-radius: 30px;
-    }
-    .game section, .animation section, .movie section{
-        margin: 30px;
-    }
-    .game div, .animation div, .movie div{
-        padding: 50px 0px;
-    }
-    .game p, .animation p, .movie p{
-        font-size: 22px;
+    p{
+        font-size: 20px;
         line-height: 30px;
     }
-    */
+    main{
+        padding: 80px 0px 0px 0px;
+    }
+    .title{
+        height: 600px;
+        padding: 0px;
+        height: 768px;
+    }
+    .about p{
+        padding: 0px 30px;
+    }
+    .portfolio img{
+        padding: 0px 0px 30px 0px; 
+        width: 512px;
+    }
 }
