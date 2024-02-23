@@ -1,5 +1,4 @@
 *{
-    padding: 0;
     margin: 0;
 }
 
@@ -19,63 +18,64 @@ h1{
     background-repeat: no-repeat;
     height: 100px;
     width: 100px;
-    left: 30px;
-    line-height: 100px;
     text-indent: -999px;
 }
 header ul{
     position: absolute;
-    right: 3vw;
-    top: 0.5vw;
+    right: 40px;
     line-height: 100px;
 }
 header li{
     display: inline;
-    margin: 2vw;
+    margin: 20px;
     font-size: 24px;
 }
+/*導覽列的連結*/
 header a{
     text-decoration: none;
 }
-
-h1, h2, h3, h4, p , a{
+/*所有文字*/
+h2, h3, p , header b{
     color: white;
 }
+/*所有標題*/
 h2, h3{
     display: flex;
     justify-content: center;
-    margin: 100px;
+    line-height: 100px;
 }
 h2{
-    font-size: 60px;
+    font-size: 40px;
 }
 h3{
-    font-size: 50px;
-    padding: 100px;
+    font-size: 34px;
+}
+p{
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    line-height: 50px;
 }
 
 main{
     background-color: rgb(25, 41, 20);
+    padding: 100px 0px 0px 0px;
 }
-.img{
-    background-image: url(image/工作區域\ 1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 1550px;
+.title{
+    padding: 50px 330px;
 }
-.about p{
-    margin: 200px 300px 200px;
-    font-size: 30px;
+.about, .portfolio, .portfolio div, .game, .animation, .movie, .info{
+    padding: 50px 0px;
+}
+.portfolio img{
+    padding: 0px 0px 50px 0px; 
+}
+.info div{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.portfolio p{
-    margin: 100px;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-}
 .game, .animation, .movie{
     padding: 0px 150px;
 }
@@ -91,21 +91,8 @@ main{
     padding: 30px;
     margin: 30px;
 }
-.game div, .animation div, .movie div{
-    padding: 50px;
-} 
 .game p, .animation p, .movie p{
     color: black;
-    font-size: 24px;
-    line-height: 50px;
-}
-.info div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    line-height: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -132,6 +119,7 @@ main{
     .img{
         height: 600px;
     }
+    /*
     h2{
         font-size: 40px;
         padding: 0px 20px;
@@ -168,4 +156,5 @@ main{
         font-size: 22px;
         line-height: 30px;
     }
+    */
 }
