@@ -59,7 +59,7 @@ p{
 }
 
 main{
-    background-color: rgb(25, 41, 20);
+    background-image: linear-gradient(rgb(13, 17, 12), rgb(94, 116, 27));
     padding: 100px 0px 0px 0px;
 }
 .title{
