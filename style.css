@@ -153,7 +153,7 @@ main{
     }
     .game, .animation, .movie{
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         padding: 0px 10px;
         overflow: scroll;
     }
