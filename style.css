@@ -105,7 +105,7 @@ main{
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .game::-webkit-scrollbar, .animation::-webkit-scrollbar, .movie::-webkit-scrollbar {
         display: none;
     }
