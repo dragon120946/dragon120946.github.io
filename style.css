@@ -142,9 +142,13 @@ main{
     .about p{
         padding: 0px 30px;
     }
-    .portfolio img{
+    .portfolio img, .game img, .animation img, .movie img{
         width: 250px;
         padding: 0px 10px;   
+    }
+    .game img, .animation img, .movie img{
+        width: 250px;
+        padding: 10px 10px;   
     }
     .game, .animation, .movie{
         padding: 0px 10px;
