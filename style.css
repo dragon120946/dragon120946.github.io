@@ -159,10 +159,13 @@ main{
     }
     .game section, .animation section, .movie section{
         align-items: flex-start;
+        padding: 40px 20px;
         margin: 0px 30px;
     }
     .game img, .animation img, .movie img{
         width: 250px;  
+        padding: 0px 0px;
+        margin: 0px 0px 30px 0px; 
     }
     .game p, .animation p, .movie p{
         font-size: 16px;
