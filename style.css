@@ -80,19 +80,21 @@ main{
 }
 
 .game, .animation, .movie{
-    padding: 0px 150px;
+    padding: 0px 200px;
 }
 .game section, .animation section, .movie section, .portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+.game img, .animation img, .movie img{
+    padding: 30px;   
+}
 .game section, .animation section, .movie section{
     background-color: rgb(189, 189, 189);
     border-radius: 30px;
-    padding: 30px;
-    margin: 30px;
+    padding: 50px;
+    margin: 50px 0px;
 }
 .game p, .animation p, .movie p{
     color: black;
@@ -104,7 +106,10 @@ main{
 }
 
 @media screen and (max-width: 600px) {
-   
+    .game::-webkit-scrollbar, .animation::-webkit-scrollbar, .movie::-webkit-scrollbar {
+        display: none;
+    }
+
     header{
         height: 80px;
     }
@@ -146,11 +151,20 @@ main{
         width: 250px;
         padding: 0px 10px;   
     }
-    .game img, .animation img, .movie img{
-        width: 250px;
-        padding: 10px 10px;   
-    }
     .game, .animation, .movie{
+        display: flex;
+        justify-content: center;
         padding: 0px 10px;
+        overflow: scroll;
+    }
+    .game section, .animation section, .movie section{
+        align-items: flex-start;
+        margin: 0px 30px;
+    }
+    .game img, .animation img, .movie img{
+        width: 250px;  
+    }
+    .game p, .animation p, .movie p{
+        font-size: 16px;
     }
 }
