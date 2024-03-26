@@ -208,3 +208,6 @@ new Topics("過去是如此令人著迷，有人懷念過去，為了留下回�
 "靳鐵章",
 "尹修倫",
 "無")
+
+var btn = document.getElementById("dtnAbout")
+btn.addEventListener("click",)

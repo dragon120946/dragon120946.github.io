@@ -31,6 +31,19 @@ header li{
     margin: 20px;
     font-size: 24px;
 }
+header button{
+    display: inline;
+    line-height: 100px;
+    background-color: rgb(93, 130, 43);
+    float: right;
+    border: none;
+    height: 100px;
+    width: 150px;
+    font-size: 24px;
+}
+header button:hover{
+    background-color: rgb(94, 116, 27);
+} 
 /*導覽列的連結*/
 header a{
     text-decoration: none;
@@ -131,6 +144,13 @@ main{
     header ul{
         display: none;
     }
+    header button{
+        display: none;
+        float: left;
+    }
+    header button:hover{
+        background-color: rgb(93, 130, 43)
+    } 
     h2{
         font-size: 32px;
     }
