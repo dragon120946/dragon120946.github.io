@@ -2,7 +2,6 @@
 *{
     margin: 0;
 }
-
 header{
     background-color: rgb(93, 130, 43);
     height: 100px;
@@ -21,31 +20,17 @@ h1{
     width: 100px;
     text-indent: -999px;
 }
-header ul{
-    position: absolute;
-    right: 40px;
+
+ul{
+    display: flex;
+    list-style-type: none;
     line-height: 100px;
+    justify-content: flex-end;
 }
-header li{
-    display: inline;
-    margin: 20px;
-    font-size: 24px;
-}
-header .btnAbout, header .btnPortfolio, header .btnInfo{
-    display: inline;
-    line-height: 100px;
-    background-color: rgb(93, 130, 43);
-    float: right;
-    border: none;
-    height: 100px;
-    width: 150px;
-    font-size: 24px;
-}
-header .btnAbout:hover, header .btnPortfolio:hover, header .btnInfo:hover{
-    background-color: rgb(94, 116, 27);
-} 
 /*導覽列的連結*/
-header a{
+li a{
+    padding: 0px 30px;
+    font-size: 24px;
     text-decoration: none;
 }
 /*所有文字*/
@@ -75,54 +60,56 @@ main{
     background-image: linear-gradient(rgb(13, 17, 12), rgb(94, 116, 27));
     padding: 100px 0px 0px 0px;
 }
-.title{
+#title{
     width: 100%;
     height: 100vw;
     background-image: url(image/Title.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
-.about, .portfolio, .portfolio div, .game, .animation, .movie, .info{
+#about, #portfolio, #portfolio div, .game, .animation, .movie, #info{
     padding: 50px 0px;
 }
-.about p{
+#about p{
     padding: 0px 300px;
 }
-.portfolio img{
+#portfolio img{
     padding: 0px 0px 30px 0px; 
 }
-
-.game, .animation, .movie{
+#portfolio a{
+    text-decoration: none;
+}
+#game, #animation, #movie{
     padding: 0px 200px;
 }
-.game section, .animation section, .movie section, .portfolio{
+#game section, #animation section, #movie section, #portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.game img, .animation img, .movie img{
+#game img, #animation img, #movie img{
     padding: 30px;   
 }
-.game section, .animation section, .movie section{
+#game section, #animation section, #movie section{
     background-color: rgb(189, 189, 189);
     border-radius: 30px;
     padding: 50px;
     margin: 50px 0px;
 }
-.game p, .animation p, .movie p{
+#game p, #animation p, #movie p{
     color: black;
 }
-.info div{
+#info div{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 @media screen and (max-width: 768px) {
-    .game::-webkit-scrollbar, .animation::-webkit-scrollbar, .movie::-webkit-scrollbar {
+
+    #game::-webkit-scrollbar, #animation::-webkit-scrollbar, #movie::-webkit-scrollbar {
         display: none;
     }
-
     header{
         height: 80px;
     }
@@ -142,11 +129,19 @@ main{
         width: 80px;
         top: -5px;
     }
-    header ul{
-        display: none;
+    ul{
+        /*display: none;*/
+        position: relative;
+        top: 80px;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 60px;
     }
-    header .btnAbout, header .btnPortfolio, header .btnInfo{
-        display: none;
+    li{
+        background-color: black;
+    }
+    li a{
+        padding: 0px, 0px;
     }
     h2{
         font-size: 32px;
@@ -161,30 +156,30 @@ main{
     main{
         padding: 80px 0px 0px 0px;
     }
-    .about p{
+    #about p{
         padding: 0px 30px;
     }
-    .portfolio img, .game img, .animation img, .movie img{
+    #portfolio img, #game img, #animation img, #movie img{
         width: 250px;
         padding: 0px 10px;   
     }
-    .game, .animation, .movie{
+    #game, #animation, #movie{
         display: flex;
         justify-content: flex-start;
         padding: 0px 10px;
         overflow: scroll;
     }
-    .game section, .animation section, .movie section{
+    #game section, #animation section, #movie section{
         align-items: flex-start;
         padding: 40px 20px;
         margin: 0px 30px;
     }
-    .game img, .animation img, .movie img{
+    #game img, #animation img, #movie img{
         width: 250px;  
         padding: 0px 0px;
         margin: 0px 0px 30px 0px; 
     }
-    .game p, .animation p, .movie p{
+    #game p, #animation p, #movie p{
         font-size: 16px;
     }
 }
